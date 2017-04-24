@@ -161,6 +161,24 @@
     #next-cont {
       display: none;
     }
+    .bar {
+      position:absolute;
+      margin-top:-20px;
+      z-index:1;
+      font-size:12px;
+    }
+
+    .text {
+      float: left;
+    }
+
+    .line {
+      float: right;
+      background: #000;
+      height:50px;
+      width:1px;
+      margin-left: 5px;
+    }
   </style>
 
 
@@ -276,12 +294,86 @@
                       <i>No</i> </p>
                     </div>
                   </div>
-                  
+
                   <div class="col-sm-9 content" id = "results-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                     <div class="row">
                       <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 02/15/2017
                     </div>
-                    
+                    <hr/>
+                    <div class="row">
+                      <i class="fa fa-sticky-note-o" aria-hidden="true"></i> Doctor's Summary <br/> <br/>
+                      <blockquote>
+                        <p>This is doctor summary, this includes summary of the results.</p>
+                      </blockquote>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                     <i class="fa fa-file-o" aria-hidden="true"></i> Results <br/> <br/>
+                     <div class="row">
+                       <div class="col-sm-4">
+                         Lab 1
+                       </div>
+                       <div class="col-sm-4">
+                         <div class="progress">
+                          <div class="bar" style="left: 90%">
+                            <div class="text">Extreme</div>
+
+                          </div>
+                          <div class="bar" style="left: 30%">
+                          <div class="text">Low</div>
+                          <div class="line"></div>
+                          </div>
+                          <div class="bar" style="left: 55%">
+                            <div class="text">Normal</div>
+                            <div class="line"></div>
+                          </div>
+                          <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
+                        </div></div>
+                      </div>
+                    <div class="row">
+                       <div class="col-sm-4">
+                         Lab 2
+                       </div>
+                       <div class="col-sm-4">
+                         <div class="progress">
+                          <div class="bar" style="left: 90%">
+                            <div class="text">Extreme</div>
+
+                          </div>
+                          <div class="bar" style="left: 30%">
+                          <div class="text">Low</div>
+                          <div class="line"></div>
+                          </div>
+                          <div class="bar" style="left: 45%">
+                            <div class="text">Normal</div>
+                            <div class="line"></div>
+                          </div>
+                          <div class="progress-bar progress-bar-success" style="width: 45%"></div>
+                        </div></div>
+                      </div>
+
+                      <div class="row">
+                       <div class="col-sm-4">
+                         Lab 1
+                       </div>
+                       <div class="col-sm-4">
+                         <div class="progress">
+                          <div class="bar" style="left: 90%">
+                            <div class="text">Extreme</div>
+
+                          </div>
+                          <div class="bar" style="left: 20%">
+                          <div class="text">Low</div>
+                          <div class="line"></div>
+                          </div>
+                          <div class="bar" style="left: 45%">
+                            <div class="text">Normal</div>
+                            <div class="line"></div>
+                          </div>
+                          <div class="progress-bar progress-bar" style="width: 70%"></div>
+                        </div></div>
+                      </div>
+                    </div>
                   </div>
                   <div class="col-sm-9 content" id = "next-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                     <div class="row">
