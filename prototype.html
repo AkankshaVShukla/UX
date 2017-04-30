@@ -17,6 +17,9 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"/>
   <script src="https://use.fontawesome.com/e15c57f273.js"></script>
   <style>
+    body {
+      color: #000
+    }
     /* make sidebar nav vertical */ 
     @media (min-width: 768px) {
       .sidebar-nav .navbar .navbar-collapse {
@@ -91,7 +94,7 @@
 
 
     .li.complete .status:before {
-      background-color: #66DC71;
+      background-color: #e4eae3;
       border: none;
       transition: all 200ms ease-in;
     }
@@ -136,13 +139,7 @@
       text-align: center;
     }
 
-    #toggleButton {
-      position: absolute;
-      left: 50px;
-      top: 20px;
-      background-color: #75C7F6;
-    }
-
+   
     /* End of timeline css */
 
     .content {
@@ -289,7 +286,7 @@
               <div id = "content-area">
                 <div class="col-sm-9 content" id = "summary-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                   <div class="row date-app">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017
+                    <h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017</h4>
                   </div>
                   <hr/>
                   <div class="row">
@@ -327,7 +324,7 @@
                       </div>
 					<div class="col-sm-9 content" id = "diagnosis-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
 						<div class="row date-app">
-							<i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017
+							 <h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017</h4>
 						</div>
 						<hr/>
 						<div class="row">
@@ -345,7 +342,7 @@
 							<i>Deficiency of iron can cause Anemia. It can also be caused by deficiency of vitamin B12. </i> </p>
 							
 							<p><b> What is the normal level of iron in your blood?</b><br/>
-							<i> <i>The normal hemoglobin range is generally defined as 13.5 to 17.5 grams (g) of hemoglobin per deciliter (dL) of blood for men and 12.0 to 15.5 g/dL for women. The normal ranges for children vary depending on the child's age and sex. </p>
+							<i>The normal hemoglobin range is generally defined as 13.5 to 17.5 grams (g) of hemoglobin per deciliter (dL) of blood for men and 12.0 to 15.5 g/dL for women. The normal ranges for children vary depending on the child's age and sex. </i></p>
                         </div>
 						<hr/>
 						<div class="row">
@@ -360,7 +357,7 @@
 
                       <div class="col-sm-9 content" id = "results-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                         <div class="row date-app">
-                          <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017
+                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017 </h4>
                         </div>
                         <hr/>
                         <div class="row">
@@ -446,7 +443,7 @@
                       </div>
                       <div class="col-sm-9 content" id = "next-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                         <div class="row date-app">
-                          <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017
+                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017 </h4>
                         </div>
                         <hr/>
                         <div class="row">
@@ -570,7 +567,7 @@
                     $("#next").parent().removeClass("active");
                     $("#summary").parent().addClass("active");
                     $('#summary-cont').fadeIn("slow");
-                    $('.date-app').html('<i class="fa fa-calendar-o" aria-hidden="true"></i> Date 01/11/2017');
+                    $('.date-app').html('<h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 01/11/2017</h4>');
                     $('#last-tl').parent().removeClass('complete');
                     $('#first-tl').parent().addClass('complete');
                   });
@@ -586,7 +583,7 @@
                     $("#next").parent().removeClass("active");
                     $("#summary").parent().addClass("active");
                     $('#summary-cont').fadeIn("slow");
-                    $('.date-app').html('<i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017');
+                    $('.date-app').html('<h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017</h4>');
                     $('#last-tl').parent().addClass('complete');
                     $('#first-tl').parent().removeClass('complete');
                   });
