@@ -43,7 +43,8 @@
     .fa-medkit {
       color:red;
     }
-    .active {
+    .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+      color: #000;
       font-weight: bold;
     }
 
@@ -293,7 +294,7 @@
               <div id = "content-area">
                 <div class="col-sm-9 content" id = "summary-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                   <div class="row date-app">
-                    <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017
+                    <h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Appointment Date 05/02/2017</h4>
                   </div>
 
                   <div class="row">
@@ -337,7 +338,7 @@
 
 					<div class="col-sm-9 content" id = "diagnosis-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
 						<div class="row date-app">
-							 <h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017</h4>
+							 <h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Appointment Date 05/02/2017</h4>
 						</div>
 						<hr/>
 						<div class="row">
@@ -370,7 +371,7 @@
 
                       <div class="col-sm-9 content" id = "results-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                         <div class="row date-app">
-                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017 </h4>
+                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Appointment Date 05/02/2017 </h4>
                         </div>
                         <hr/>
                         <div class="row">
@@ -456,7 +457,7 @@
                       </div>
                       <div class="col-sm-9 content" id = "next-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                         <div class="row date-app">
-                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017 </h4>
+                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Appointment Date 05/02/2017 </h4>
                         </div>
                         <hr/>
                         <div class="row">
@@ -489,7 +490,7 @@
                       </div>
 					   <div class="col-sm-9 content" id = "medication-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                         <div class="row date-app">
-                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017 </h4>
+                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Appointment Date 05/02/2017 </h4>
                         </div>
                         <hr/>
                         <div class="row">
@@ -650,7 +651,7 @@
                     $("#next").parent().removeClass("active");
                     $("#summary").parent().addClass("active");
                     $('#summary-cont').fadeIn("slow");
-                    $('.date-app').html('<h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 01/11/2017</h4>');
+                    $('.date-app').html('<h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Appointment Date 01/11/2017</h4>');
                     $('#last-tl').parent().removeClass('complete');
                     $('#first-tl').parent().addClass('complete');
                   });
@@ -666,7 +667,7 @@
                     $("#next").parent().removeClass("active");
                     $("#summary").parent().addClass("active");
                     $('#summary-cont').fadeIn("slow");
-                    $('.date-app').html('<h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017</h4>');
+                    $('.date-app').html('<h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Appointment Date 05/02/2017</h4>');
                     $('#last-tl').parent().addClass('complete');
                     $('#first-tl').parent().removeClass('complete');
                   });
