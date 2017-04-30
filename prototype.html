@@ -278,6 +278,7 @@
 						<li><a href="#" id = "diagnosis">Diagnosis</a></li>
                         <li><a href="#" id = "results">Lab Results</a></li>
                         <li><a href="#" id = "next">Next Steps</a></li>
+						<li><a href="#" id = "medication">Medications</a></li>
                       </ul>
                     </div><!--/.nav-collapse -->
                   </div>
@@ -474,6 +475,55 @@
                           </form>
                         </div>
                       </div>
+					   <div class="col-sm-9 content" id = "medication-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
+                        <div class="row date-app">
+                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017 </h4>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                          <table class="table">
+							  <thead>
+								<tr>
+								  <th>#</th>
+								  <th>Medicine Name</th>
+								  <th>Make of medicine</th>
+								  <th>Type</th>
+								  <th>Frequency</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th scope="row">1</th>
+								  <td>benzonatate</td>
+								  <td>pfizer</td>
+								  <td>OTC</td>
+								  <td>3 times in a day</td>
+								</tr>
+								<tr>
+								  <th scope="row">2</th>
+								  <td>diphenhydramine</td>
+								  <td>amgen</td>
+								  <td>Rx/ OTC</td>
+								  <td>Lunch time</td>
+								</tr>
+								<tr>
+								  <th scope="row">3</th>
+								  <td>Hydromet</td>
+								  <td>roche</td>
+								  <td>OTC</td>
+								  <td>Before sleep</td>
+								</tr>
+								<tr>
+								  <th scope="row">3</th>
+								  <td>Tylenol-Codeine</td>
+								  <td>pfizer</td>
+								  <td>Rx/ OTC</td>
+								  <td>2 times in a day</td>
+								</tr>
+							  </tbody>
+							</table>
+                        </div>
+                      </div>
 
                     </div>
                   </div>
@@ -503,6 +553,8 @@
                    $("#results").parent().removeClass("active");
                    $('#next-cont').hide();
                    $("#next").parent().removeClass("active");
+				   $('#medication-cont').hide();
+                   $("#medication").parent().removeClass("active");
                    $("#summary").parent().addClass("active");
                    $('#summary-cont').fadeIn("slow");
 
@@ -515,6 +567,8 @@
                    $("#diagnosis").parent().removeClass("active");
                    $('#next-cont').hide();
                    $("#next").parent().removeClass("active");
+				   $('#medication-cont').hide();
+                   $("#medication").parent().removeClass("active");
                    $("#results").parent().addClass("active");
                    $('#results-cont').fadeIn("slow");
                  });
@@ -525,8 +579,23 @@
                    $("#diagnosis").parent().removeClass("active");
                    $('#results-cont').hide();
                    $("#results").parent().removeClass("active");
+				   $('#medication-cont').hide();
+                   $("#medication").parent().removeClass("active");
                    $("#next").parent().addClass("active");
                    $('#next-cont').fadeIn("slow");
+
+                 });
+				 $("#medication").click(function() {
+                   $('#summary-cont').hide();
+                   $("#summary").parent().removeClass("active");
+				   $('#diagnosis-cont').hide();
+                   $("#diagnosis").parent().removeClass("active");
+                   $('#results-cont').hide();
+                   $("#results").parent().removeClass("active");
+				   $('#next-cont').hide();
+                   $("#next").parent().removeClass("active");
+                   $("#medication").parent().addClass("active");
+                   $('#medication-cont').fadeIn("slow");
 
                  });
 
@@ -537,6 +606,8 @@
                    $("#summary").parent().removeClass("active");
                    $('#results-cont').hide();
                    $("#results").parent().removeClass("active");
+				   $('#medication-cont').hide();
+                   $("#medication").parent().removeClass("active");
                    $("#diagnosis").parent().addClass("active");
                    $('#diagnosis-cont').fadeIn("slow");
 
