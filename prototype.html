@@ -186,6 +186,21 @@
     .disabled{
       color:#D6DCE0;
     }
+
+    .lab {
+      font-size: 14px;
+      padding-bottom: 30px;
+    }
+    .lab img{
+      display: block;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .vertical-align {
+        display: flex;
+        align-items: center;
+    }
   </style>
 
 
@@ -264,7 +279,7 @@
                       <ul class="nav navbar-nav">
                         <li class="active"><a href="#" id = "summary">Summary</a></li>
 						<li><a href="#" id = "diagnosis">Diagnosis</a></li>
-                        <li><a href="#" id = "results">Results</a></li>
+                        <li><a href="#" id = "results">Lab Results</a></li>
                         <li><a href="#" id = "next">Next Steps</a></li>
                       </ul>
                     </div><!--/.nav-collapse -->
@@ -351,89 +366,81 @@
                         <div class="row">
                           <i class="fa fa-sticky-note-o" aria-hidden="true"></i> Doctor's Summary <br/> <br/>
                           <blockquote>
-                            <p>This is doctor summary, this includes summary of the results.</p>
+                            <p>Consistent with your sympoms, these labs indicate that you have Anemia. At your next visit we will try to determine the cause.</p>
+                            <p><i class="fa fa-check-circle" style="color: green"></i> All labs have been reviewed by Dr. Smith.</p>
                           </blockquote>
                         </div>
                         <hr/>
                         <div class="row">
-                         <i class="fa fa-file-o" aria-hidden="true"></i> Results <br/> <br/>
-                         <div class="row">
-                           <div class="col-sm-4">
-                             Lab 1
-                           </div>
-                           <div class="col-sm-4">
-                             <div class="progress">
-                              <div class="bar" style="left: 85%">
-                                <div class="text">Extreme</div>
+                         <i class="fa fa-file-o" aria-hidden="true"></i> Lab Results <br/> <br/>
 
-                              </div>
-                              <div class="bar" style="left: 30%">
-                                <div class="text">Low</div>
-                                <div class="line"></div>
-                              </div>
-                              <div class="bar" style="left: 55%">
-                                <div class="text">Normal</div>
-                                <div class="line"></div>
-                              </div>
-                              <div class="progress-bar progress-bar-danger" style="width: 35%"></div>
-                            </div></div>
-                            <div style="padding-left: 25px;">
-                              <a href="https://google.com"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                              <a href="#"><i class="fa fa-history" aria-hidden="true"></i></a>
+                        <div class = "lab">
+                          <div class="row vertical-align">
+                            <div class="col-sm-2">
+                              RBC Count
                             </div>
+                            <div class="col-sm-9">
+                              <img src = "./images/rbccount.png" />
 
-                          </div>
-                          <div class="row">
-                           <div class="col-sm-4">
-                             Lab 2
-                           </div>
-                           <div class="col-sm-4">
-                             <div class="progress">
-                              <div class="bar" style="left: 85%">
-                                <div class="text">Extreme</div>
+                              <div class="row" style="text-align: center;"><div class="col-sm-12">
+                              <a style="padding:5px; color:navy;" data-toggle="collapse" data-target="#learnmore1">Learn more</a>
+                              </div></div>
+                              <div id="learnmore1" class="collapse">
+                              <p>An RBC count is a blood test that measures how many red blood cells (RBCs) you have. </p>
+                              <p>RBCs contain hemoglobin, which carries oxygen. How much oxygen your body tissues get depends on how many RBCs you have and how well they work.</p>
+                              </div>
 
-                              </div>
-                              <div class="bar" style="left: 30%">
-                                <div class="text">Low</div>
-                                <div class="line"></div>
-                              </div>
-                              <div class="bar" style="left: 45%">
-                                <div class="text">Normal</div>
-                                <div class="line"></div>
-                              </div>
-                              <div class="progress-bar progress-bar-success" style="width: 45%"></div>
-                            </div></div>
-                            <div style="padding-left: 25px;">
-                              <a href="https://google.com"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                              <a href="#"><i class="fa fa-history" aria-hidden="true"></i></a>
+                            </div>
+                            <div class="col-sm-1">
+                                <a href="#"><i style="color: black" class="graph fa fa-line-chart" aria-hidden="true"></i></a>
                             </div>
                           </div>
+                        </div>
 
-                          <div class="row">
-                           <div class="col-sm-4">
-                             Lab 3
-                           </div>
-                           <div class="col-sm-4">
-                             <div class="progress">
-                              <div class="bar" style="left: 85%">
-                                <div class="text">Extreme</div>
+                        <div class = "lab">
+                          <div class="row vertical-align">
+                            <div class="col-sm-2">
+                              Hemoglobin
+                            </div>
+                            <div class="col-sm-9">
+                              <img src = "./images/hemoglobin.png" />
 
+                              <div class="row" style="text-align: center;"><div class="col-sm-12">
+                              <a style="padding:5px; color:navy;" data-toggle="collapse" data-target="#learnmore2">Learn more</a>
+                              </div></div>
+                              <div id="learnmore2" class="collapse">
+                              <p>Hemoglobin (Hb or Hgb) is a protein in red blood cells that carries oxygen throughout the body.</p>
+                              <p>In many cases, a low hemoglobin count is only slightly lower than normal and doesn't affect how you feel. If it gets more severe and causes symptoms, your low hemoglobin count may indicate you have anemia.</p>
                               </div>
-                              <div class="bar" style="left: 20%">
-                                <div class="text">Low</div>
-                                <div class="line"></div>
-                              </div>
-                              <div class="bar" style="left: 45%">
-                                <div class="text">Normal</div>
-                                <div class="line"></div>
-                              </div>
-                              <div class="progress-bar progress-bar" style="width: 70%"></div>
-                            </div></div>
-                            <div style="padding-left: 25px;">
-                              <a href="https://google.com"><i class="fa fa-info-circle" aria-hidden="true"></i></a>
-                              <a href="#"><i class="fa fa-history" aria-hidden="true"></i></a>
+
+                            </div>
+                            <div class="col-sm-1">
+                                <a href="#"><i style="color: black" class="graph fa fa-line-chart" aria-hidden="true"></i></a>
                             </div>
                           </div>
+                        </div>
+
+                        <div class = "lab">
+                          <div class="row vertical-align">
+                            <div class="col-sm-2">
+                              Hematocrit
+                            </div>
+                            <div class="col-sm-9">
+                              <img src = "./images/Hematocrit.png" />
+
+                              <div class="row" style="text-align: center;"><div class="col-sm-12">
+                              <a style="padding:5px; color:navy;" data-toggle="collapse" data-target="#learnmore3">Learn more</a>
+                              </div></div>
+                              <div id="learnmore3" class="collapse">
+                              <p>Your hematocrit is the volume of red blood cells in your body. A hematocrit test measures the ratio of RBCs in your blood.</p>
+                              <p>A low hematocrit means the percentage of red blood cells is below the lower limits of normal.</p>
+                              </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <a href="#"><i style="color: black" class="graph fa fa-line-chart" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
+                        </div>
 
                         </div>
                       </div>
@@ -584,9 +591,10 @@
                     $('#first-tl').parent().removeClass('complete');
                   });
 
-                  $('.fa-history').click(function() {
+                  $('.graph').click(function() {
                       $('#graph').modal('show');
                   });
+
                 </script>
               </body>
               </html>
