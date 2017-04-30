@@ -163,6 +163,18 @@
     }
 	#medication-cont{
 	  display: none;
+	  
+	#results1-cont {
+      display: none;
+    }
+	#diagnosis1-cont {
+      display: none;
+    }
+    #next-cont1 {
+      display: none;
+    }
+	#medication1-cont{
+	  display: none;
 	}
     .bar {
       position:absolute;
@@ -220,13 +232,23 @@
   <ul class="timeline" id="timeline">
     <li class="li complete" style="margin-top: 37px;"><i class="fa fa-arrow-left fa-6" aria-hidden="true"></i></li>
     
-            <li class="li complete" id = "last">
+            <li class="li complete" id = "first">
+              <div class="timestamp">
+                <span class="date">01/11/2017<span>
+                </span></span>
+				</div>
+                <div class="status" id = "first-tl">
+                </div>
+              </li>
+			<li class="li complete" id = "last">
               <div class="timestamp">
                 <span class="date">05/02/2017<span>
-                </span></span></div>
+                </span></span>
+				</div>
                 <div class="status" id = "last-tl">
                 </div>
               </li>
+			  
               <li class="li complete disabled" style="margin-top: 37px;"><i class="fa fa-arrow-right fa-6" aria-hidden="true"></i></li>
             </ul>
           <br/>
@@ -532,6 +554,265 @@
                       </div>
 
                     </div>
+					
+					<!-- For 1 st-->
+
+					 <div class="col-sm-9 content" id = "summary1-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
+                  <div class="row date-app">
+				    <h4><i class="glyphicon glyphicon-user" aria-hidden="true"></i> Monica Latte </h4>
+					<h4><i class="glyphicon glyphicon-home" aria-hidden="true"></i> Address: 4444 Coffee Ave, Chocolate, California </h4>
+                    <h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017</h4>
+                  </div>
+                  <hr/>
+                  <div class="row">
+                    <i class="fa fa-sticky-note-o" aria-hidden="true"></i> Summary <br/> <br/>
+                    <blockquote>
+                      <p>Patient Visited first time, she had abdominal pain</p>
+                    </blockquote>
+                  </div>
+                  <hr/>
+                  <div class="row">
+                    <i class="fa fa-user-md" aria-hidden="true"></i> Doctor John Smith
+                  </div>
+                  <hr/>
+                  <div class="row">
+                    <i class="fa fa-comment-o" aria-hidden="true"></i> Doctor's notes <br/> <br/>
+                    <blockquote>
+                      
+                      <p>Directives are Pain in abdominal area<br/>
+					  General: 
+					  <br/> 
+					  Nutrition: well balanced diet
+					  <br/> Work: Maximum time sitting on chair
+					  <br/> Exercise: Yoga daily
+					  <br/> Alcohol consumption: considerable
+		              <br/> Smoking: denied to answer
+						</p>
+                    </blockquote>
+                  </div>
+                  <hr/>
+                  <div class="row">
+                    <i class="fa fa-info" aria-hidden="true"></i> Diagnosis
+                    <blockquote>
+                      <p>General Appearance:well nourished
+						<br/>pulses normal and symmetric
+						<br/>Skin: clear, good turgor	
+
+						<br/>Problems (including changes): Blood pressure is lower.
+
+						<br/>Impression: Sub optimal sugar, control with retinopathy and neuropathy, high glucometer readings.
+<br/>						Will work harder on diet. Will increase insulin by 2 units.</p>
+                    </div>
+                    <hr/>
+                    <div class="row">
+                      <i class="fa fa-question-circle-o" aria-hidden="true"></i> Q & A
+                      <p><b> Is it okay to drink?</b><br/>
+                        <i>May be occasionally, not regularly</i> </p>
+                        <p><b> Is it okay to smoke?</b><br/>
+                          <i>No</i> </p>
+						  <form>
+							<div class="form-group">
+							  <label for="comment">Question:</label>
+							  <textarea class="form-control" rows="1" id="comment"></textarea>
+							  <label for="comment">Answer:</label>
+							  <textarea class="form-control" rows="1" id="comment"></textarea>
+							  <button style="text-align: center;" type="submit" class="btn btn-success">Save</button>
+							</div>
+						  </form>
+                        </div>
+                      </div>
+					<div class="col-sm-9 content" id = "diagnosis1-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
+						<div class="row date-app">
+							 <h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017</h4>
+						</div>
+						<hr/>
+						<div class="row">
+							<i class="fa fa-sticky-note-o" aria-hidden="true"></i>Directives : Diabetes may be <br/> <br/>
+							<blockquote>
+								<p>Problems (including changes): Blood pressure is lower. 
+								<br/>Feet are inspected and there are no callouses, no compromised skin. No vision complaints.
+
+								<br/>Impression: Sub optimal sugar, control with retinopathy and neuropathy, high glucometer readings.<br/> Will work harder on diet. Will increase insulin by 2 units.</p>
+							</blockquote>
+						</div>
+						<hr/>
+						<div class="row">
+							<i class="fa fa-question-circle-o" aria-hidden="true"></i> FAQ
+							<p><b> What are the symptoms of Diabetes?</b><br/>
+							<i>Easy fatigue and loss of energy. Unusually rapid heart beat, particularly with exercise. Shortness of breath and headache, particularly with exercise. Difficulty concentrating and Dizziness</i> </p>
+							<p><b> What is the cause of Diabetes? </b><br/>
+							<i>Deficiency of iron can cause Anemia. It can also be caused by deficiency of vitamin B12. </i> </p>
+							
+							<p><b> What is the normal level of Glucose in your blood?</b><br/>
+							<i>The normal hemoglobin range is generally defined as 13.5 to 17.5 grams (g) of hemoglobin per deciliter (dL) of blood for men and 12.0 to 15.5 g/dL for women. The normal ranges for children vary depending on the child's age and sex. </i></p>
+                        </div>
+						<hr/>
+						<div class="row">
+							<a href="https://counseling.dasa.ncsu.edu/">Support Group And Counseling</a>
+						</div>
+						<hr/>
+						<div class="row">
+							<a href="https://en.wikipedia.org/wiki/Anemia">More Information</a>
+						</div>
+						<hr/>
+					</div>
+
+                      <div class="col-sm-9 content" id = "results1-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
+                        <div class="row date-app">
+                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017 </h4>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                          <i class="fa fa-sticky-note-o" aria-hidden="true"></i> Doctor's Summary <br/> <br/>
+                          <blockquote>
+                            <p>Allergies and Adverse Reactions (! = critical)</p>
+                            <p><i class="fa fa-check-circle" style="color: green"></i> All labs have been reviewed by Dr. Smith.</p>
+                          </blockquote>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                         <i class="fa fa-file-o" aria-hidden="true"></i> Lab Results <br/> <br/>
+
+                        <div class = "lab">
+                          <div class="row vertical-align">
+                            <div class="col-sm-2">
+                              Glucose in blood
+                            </div>
+                            <div class="col-sm-9">
+                              <img src = "./images/rbccount.png" />
+
+                              <div class="row" style="text-align: center;"><div class="col-sm-12">
+                              <a style="padding:5px; color:navy;" data-toggle="collapse" data-target="#learnmore1">Learn more</a>
+                              </div></div>
+                              <div id="learnmore1" class="collapse">
+                              <p>Diabetes is disease in which the body’s ability to produce or respond to the hormone insulin is impaired, resulting in abnormal metabolism of carbohydrates and elevated levels of glucose in the blood and urine.</p>
+                              </div>
+
+                            </div>
+                            <div class="col-sm-1">
+                                <a href="#"><i style="color: black" class="graph fa fa-line-chart" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class = "lab">
+                          <div class="row vertical-align">
+                            <div class="col-sm-2">
+                              Hemoglobin
+                            </div>
+                            <div class="col-sm-9">
+                              <img src = "./images/hemoglobin.png" />
+
+                              <div class="row" style="text-align: center;"><div class="col-sm-12">
+                              <a style="padding:5px; color:navy;" data-toggle="collapse" data-target="#learnmore2">Learn more</a>
+                              </div></div>
+                              <div id="learnmore2" class="collapse">
+                              <p>Diabetes is disease in which the body’s ability to produce or respond to the hormone insulin is impaired, resulting in abnormal metabolism of carbohydrates and elevated levels of glucose in the blood and urine.</p>
+                              <p>In many cases, a low hemoglobin count is only slightly lower than normal and doesn't affect how you feel. If it gets more severe and causes symptoms, your low hemoglobin count may indicate you have anemia.</p>
+                              </div>
+
+                            </div>
+                            <div class="col-sm-1">
+                                <a href="#"><i style="color: black" class="graph fa fa-line-chart" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class = "lab">
+                          <div class="row vertical-align">
+                            <div class="col-sm-2">
+                              Hematocrit
+                            </div>
+                            <div class="col-sm-9">
+                              <img src = "./images/Hematocrit.png" />
+
+                              <div class="row" style="text-align: center;"><div class="col-sm-12">
+                              <a style="padding:5px; color:navy;" data-toggle="collapse" data-target="#learnmore3">Learn more</a>
+                              </div></div>
+                              <div id="learnmore3" class="collapse">
+                              <p>Your hematocrit is the volume of red blood cells in your body. A hematocrit test measures the ratio of RBCs in your blood.</p>
+                              <p>A low hematocrit means the percentage of red blood cells is below the lower limits of normal.</p>
+                              </div>
+                            </div>
+                            <div class="col-sm-1">
+                                <a href="#"><i style="color: black" class="graph fa fa-line-chart" aria-hidden="true"></i></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        </div>
+                      </div>
+                      <div class="col-sm-9 content" id = "next1-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
+                        <div class="row date-app">
+                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017 </h4>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                          <form class="form-horizontal">
+                            <fieldset>
+
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Schedule next appointment
+                                </label>
+                              </div>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Pickup medicine
+                                </label>
+                              </div>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Read lab result
+                                </label>
+                              </div>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox"> Ask questions
+                                </label>
+                              </div>
+                            </fieldset>
+                          </form>
+                        </div>
+                      </div>
+					   <div class="col-sm-9 content" id = "medication1-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
+                        <div class="row date-app">
+                         <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017 </h4>
+                        </div>
+                        <hr/>
+                        <div class="row">
+                          <table class="table">
+							  <thead>
+								<tr>
+								  <th>#</th>
+								  <th>Medicine Name</th>
+								  <th>Make of medicine</th>
+								  <th>Type</th>
+								  <th>Frequency</th>
+								</tr>
+							  </thead>
+							  <tbody>
+								<tr>
+								  <th scope="row">1</th>
+								  <td><textarea class="form-control" rows="1" id="comment"></textarea> </td>
+								  <td><textarea class="form-control" rows="1" id="comment"></textarea></td>
+								  <td><textarea class="form-control" rows="1" id="comment"></textarea></td>
+								  <td><textarea class="form-control" rows="1" id="comment"></textarea></td>
+								</tr>
+								<tr>
+								  <button style="text-align: center;" type="submit" class="btn btn-success">Add one more row</button>
+								</tr>
+								
+								
+							  </tbody>
+							</table>
+                        </div>
+                      </div>
+
+                    </div>
+					
+					
+					
                   </div>
 
     <div class="modal fade" id="graph" role="dialog">
@@ -567,6 +848,19 @@
                  });
 
                   $("#results").click(function() {
+				  if(first == true){
+				   $('#summary1-cont').hide();
+                   $("#summary1").parent().removeClass("active");
+				   $('#diagnosis1-cont').hide();
+                   $("#diagnosis1").parent().removeClass("active");
+                   $('#next1-cont').hide();
+                   $("#next1").parent().removeClass("active");
+				   $('#medication1-cont').hide();
+                   $("#medication1").parent().removeClass("active");
+                   $("#results1").parent().addClass("active");
+                   $('#results1-cont').fadeIn("slow");
+				   }
+				  else
                    $('#summary-cont').hide();
                    $("#summary").parent().removeClass("active");
 				   $('#diagnosis-cont').hide();
@@ -634,6 +928,7 @@
                   });
 
                   $('#first-tl').click(function() {
+				     var first=true;
                     $('#content-area').fadeOut();
                     $('#content-area').fadeIn();
 					$('#diagnosis-cont').hide();
@@ -644,8 +939,10 @@
                     $("#next").parent().removeClass("active");
 					$('#medication-cont').hide();
                     $("#medication").parent().removeClass("active");
-                    $("#summary").parent().addClass("active");
-                    $('#summary-cont').fadeIn("slow");
+					$('#summary-cont').hide();
+                    $("#summary").parent().removeClass("active");
+                    $("#summary1").parent().addClass("active");
+                    $('#summary1-cont').fadeIn("slow");
                     $('.date-app').html('<h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 01/11/2017</h4>');
                     $('#last-tl').parent().removeClass('complete');
                     $('#first-tl').parent().addClass('complete');
@@ -662,6 +959,16 @@
                     $("#next").parent().removeClass("active");
 					$('#medication-cont').hide();
                     $("#medication").parent().removeClass("active");
+					$('#results1-cont').hide();
+                    $("#results1").parent().removeClass("active");
+					$('#diagnosis1-cont').hide();
+                    $("#diagnosis1").parent().removeClass("active");
+                    $('#next1-cont').hide();
+                    $("#next1").parent().removeClass("active");
+					$('#summary1-cont').hide();
+                    $("#summary1").parent().removeClass("active");
+					$('#medication1-cont').hide();
+                    $("#medication1").parent().removeClass("active");
                     $("#summary").parent().addClass("active");
                     $('#summary-cont').fadeIn("slow");
                     $('.date-app').html('<h4><i class="fa fa-calendar-o" aria-hidden="true"></i> Date 05/02/2017</h4>');
