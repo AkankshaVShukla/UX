@@ -567,6 +567,10 @@
     color : #000;
     font-weight: normal;
   }
+  .badge {
+    background: orange;
+  }
+
 </style>
 
 
@@ -1080,6 +1084,10 @@
        $('#next-cont').hide();
        $("#next").parent().removeClass("active");
        $('#medication-cont').hide();
+       if(!$('#read-lab').is(':checked')) {
+         $('#read-lab').prop('checked', true);
+         $('#read-lab').trigger('change');
+      }
        $("#medication").parent().removeClass("active");
        $("#results").parent().addClass("active");
        $('#results-cont').fadeIn("slow");
@@ -1259,7 +1267,26 @@
       }
     });
 
+      $("input[type='checkbox']").change(function() {
+       data = $(".badge").html();
+       if(!isNaN(data)) { 
+          if(this.checked) {
+            $(".badge").html(parseInt($(".badge").html()) - 1);
+            if(parseInt(data) === 1) {
+              $(".badge").html('<i class="fa fa-check" aria-hidden="true"></i>');
+              $(".badge").css('background','#5cb85c');
+            }
+          } else {
+            $(".badge").html(parseInt($(".badge").html()) + 1);
+          }
+        } else {
+          if (!this.checked) {
+            $(".badge").html("1");
+            $(".badge").css('background','orange');
+          }
+        }
 
+    });
 
   </script>
 </body>
