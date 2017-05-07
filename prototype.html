@@ -211,6 +211,26 @@
     a:hover, a:focus {
       color: #3a5da0;
     }
+
+
+    /*new code*/
+    .panel-title {
+      font-weight: bold;
+    }
+    .panel-default>.panel-heading {
+      background: #fff;
+    }
+
+    .accordion-toggle:after {
+      font-family: 'FontAwesome';
+      content: "\f078";    
+      float: right;
+    }
+    .accordion-opened .accordion-toggle:after {    
+      content: "\f054";    
+    }
+
+    /*new code*/
   </style>
 
 
@@ -474,36 +494,137 @@
                          <h4> <i class="fa fa-calendar-o" aria-hidden="true"></i> Appointment Date 05/02/2017 </h4>
                         </div>
                         <hr/>
-                        <div class="row">
-                          <form class="form-horizontal">
-                            <fieldset>
+                        <!-- new code -->
+                              <div id = "content-area-1" class="pagination-centered">
+                                <div class="panel-group">
+                                  
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h5 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#content-area-1" href="#schedule_an_apointment">Schedule an apointment</a>
+                                      </h5>
+                                    </div>
+                                    <div id="schedule_an_apointment" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                          <table id="next_step_1" class="table">
+                                            <tr>
+                                              <td>Name:</td>
+                                              <td>James Anderson</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Phone:</td>
+                                              <td>+1(919) 123-456</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Email:</td>
+                                              <td>james@james.com</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Website:</td>
+                                              <td> www.james.com</td>
+                                            </tr>
+                                          </table>
+                                       
+                                      </div>
+                                    </div>
+                                  </div>
 
-                              <div id="nextSteps" class="checkbox">
-                                <label>
-                                  <input type="checkbox" id="check1"> Schedule next appointment
-                                </label>
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h5 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#content-area-1" href="#pickup_medicine">Pick up medicine</a>
+                                      </h5>
+                                    </div>
+                                    <div id="pickup_medicine" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                          <table id="next_step_1" class="table">
+                                            <tr>
+                                              <td>Name:</td>
+                                              <td>Randy Watgreen</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Phone:</td>
+                                              <td>+1(919) 321-456</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Email:</td>
+                                              <td>randy@randy.com</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Website:</td>
+                                              <td> www.randy.com</td>
+                                            </tr>
+                                          </table>
+                                       
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                   <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h5 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#content-area-1" href="#read_lab_results">Read Lab Results</a>
+                                      </h5>
+                                    </div>
+                                    <div id="read_lab_results" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                          <table id="next_step_1" class="table">
+                                            <tr>
+                                              <td>Name:</td>
+                                              <td>Veronica Stinson</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Phone:</td>
+                                              <td>+1(919) 123-224</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Email:</td>
+                                              <td>veronica@veronica.com</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Website:</td>
+                                              <td> www.veronica.com</td>
+                                            </tr>
+                                          </table>
+                                       
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                   <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      <h5 class="panel-title">
+                                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#content-area-1" href="#ask_questions">Ask Questions</a>
+                                      </h5>
+                                    </div>
+                                    <div id="ask_questions" class="panel-collapse collapse">
+                                      <div class="panel-body">
+                                         <table id="next_step_1" class="table">
+                                            <tr>
+                                              <td>Name:</td>
+                                              <td>Matt Brown</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Phone:</td>
+                                              <td>+1(919) 654-321</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Email:</td>
+                                              <td>matt@matt.com</td>
+                                            </tr>
+                                            <tr>
+                                              <td>Website:</td>
+                                              <td> www.matt.com</td>
+                                            </tr>
+                                          </table>
+                                       
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
                               </div>
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" id="check2"> Pickup medicine
-                                </label>
-                              </div>
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" id="check3"> Read lab result
-                                </label>
-                              </div>
-                              <div class="checkbox">
-                                <label>
-                                  <input type="checkbox" id="check4"> Ask questions
-                                </label>
-                              </div>
-                              <div>
-                                <button type="button" class = "btn btn-success" id="done" style="float:right;display:none">Completed</button>
-                              </div> 
-                            </fieldset>
-                          </form>
-                        </div>
+                        <!-- new code -->
                       </div>
 					   <div class="col-sm-9 content" id = "medication-cont" style="background: #fff;  min-height: 300px; border-radius:4px;border-color: #eee; padding: 30px;">
                         <div class="row date-app" style="text-align: center;">
